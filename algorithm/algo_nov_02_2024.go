@@ -6,6 +6,24 @@ import (
 	"strings"
 )
 
+func GetSneakyNumbers(nums []int) []int {
+	m := map[int]int{}
+	r := make([]int, 0)
+
+	for i := 0; i < len(nums); i++ {
+		m[nums[i]]++
+		if m[nums[i]] > 1 {
+			r = append(r, nums[i])
+		}
+
+		if len(r) == 2 {
+			break
+		}
+	}
+
+	return r
+}
+
 func FindDifference(nums1 []int, nums2 []int) [][]int {
 	arr1 := make([]int, 0)
 	arr2 := make([]int, 0)
