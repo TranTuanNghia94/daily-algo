@@ -6,7 +6,8 @@ import (
 )
 
 func main() {
-	nums := []int{0, 3, 2, 1, 3, 2}
-	r := algo.GetSneakyNumbers(nums)
+	s := "bbbacddceeb"
+	g := "ceebbbbacdd"
+	r := algo.RotateString(s, g)
 	fmt.Println(r)
 }
