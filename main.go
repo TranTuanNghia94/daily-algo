@@ -6,8 +6,7 @@ import (
 )
 
 func main() {
-	s := "bbbacddceeb"
-	g := "ceebbbbacdd"
-	r := algo.RotateString(s, g)
+	s := "abcde"
+	r := algo.CompressedString(s)
 	fmt.Println(r)
 }
