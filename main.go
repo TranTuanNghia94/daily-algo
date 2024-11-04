@@ -6,8 +6,7 @@ import (
 )
 
 func main() {
-	s := []int{0, 4, 0, 3, 2}
-	k := 1
-	r := algo.FindMaxAverage(s, k)
+	s := []string{"-60", "D", "-36", "30", "13", "C", "C", "-33", "53", "79"}
+	r := algo.CalPoints(s)
 	fmt.Println(r)
 }

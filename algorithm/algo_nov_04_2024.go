@@ -1,5 +1,54 @@
 package algo
 
+import (
+	"strconv"
+)
+
+// https://leetcode.com/problems/baseball-game/description/?envType=study-plan-v2&envId=programming-skills
+func CalPoints(operations []string) int {
+	sum := 0
+	arr := make([]int, 0)
+	for i := range operations {
+		switch operations[i] {
+		case "C":
+			sum -= arr[len(arr)-1]
+			arr = arr[:len(arr)-1]
+		case "D":
+			arr = append(arr, arr[len(arr)-1]*2)
+			sum += arr[len(arr)-1]
+		case "+":
+			arr = append(arr, arr[len(arr)-1]+arr[len(arr)-2])
+			sum += arr[len(arr)-1]
+		default:
+			num, err := strconv.Atoi(operations[i])
+			if err != nil {
+				return 0
+			}
+			arr = append(arr, num)
+			sum += num
+		}
+	}
+
+	return sum
+}
+
+// https://leetcode.com/problems/unique-number-of-occurrences/description/?envType=study-plan-v2&envId=leetcode-75
+func UniqueOccurrences(arr []int) bool {
+	var count = make(map[int]int)
+	for i := 0; i < len(arr); i++ {
+		count[arr[i]]++
+	}
+
+	var result = make(map[int]int)
+	for _, value := range count {
+		result[value]++
+		if result[value] != 1 {
+			return false
+		}
+	}
+	return true
+}
+
 // https://leetcode.com/problems/maximum-average-subarray-i/?envType=study-plan-v2&envId=leetcode-75
 func FindMaxAverage(nums []int, k int) float64 {
 	maxAvgSum := 0.00000
