@@ -1,5 +1,6 @@
 package algo
 
+// https://leetcode.com/problems/string-compression-iii/description/?envType=daily-question&envId=2024-11-04
 func CompressedString(word string) string {
 	n := len(word)
 	res := []byte{}
