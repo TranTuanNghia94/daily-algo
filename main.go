@@ -6,7 +6,8 @@ import (
 )
 
 func main() {
-	s := []int{1, 2, 3, 2, 5}
-	r := algo.CanMakeArithmeticProgression(s)
+	s := "weallloveyou"
+	k := 7
+	r := algo.MaxVowels(s, k)
 	fmt.Println(r)
 }

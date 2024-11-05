@@ -1,5 +1,35 @@
 package algo
 
+// https://leetcode.com/problems/maximum-number-of-vowels-in-a-substring-of-given-length/description/?envType=study-plan-v2&envId=leetcode-75
+func MaxVowels(s string, k int) int {
+	m := map[rune]bool{'a': true, 'e': true, 'i': true, 'o': true, 'u': true}
+	count := 0
+
+	for i := 0; i < k; i++ {
+		if m[rune(s[i])] {
+			count++
+		}
+	}
+
+	maxNum := count
+
+	for i := k; i < len(s); i++ {
+		if m[rune(s[i])] {
+			count++
+		}
+
+		if m[rune(s[i-k])] {
+			count--
+		}
+
+		if count > maxNum {
+			maxNum = count
+		}
+	}
+
+	return maxNum
+}
+
 // https://leetcode.com/problems/can-make-arithmetic-progression-from-sequence/description/
 func CanMakeArithmeticProgression(arr []int) bool {
 	maxNum := arr[0]
