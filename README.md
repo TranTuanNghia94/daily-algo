@@ -4,9 +4,11 @@
 
 ### 1502. Can Make Arithmetic Progression From Sequence
 > Solution: <br/>
-[see more on Github](https://github.com/TranTuanNghia94/daily-algo/blob/main/algorithm/algo_nov_05_2024.go)<br/>
+[see more on Github](https://github.com/TranTuanNghia94/daily-algo/blob/main/algorithm/algo_nov_05_2024.go#L4)<br/>
 [see more on Leetcode](https://leetcode.com/problems/can-make-arithmetic-progression-from-sequence/solutions/6009471/go-100-fast-without-sorting/)
 
+<br/>
+<hr />
 
 ### 2490. Circular Sentence
 > Solution: <br/>
