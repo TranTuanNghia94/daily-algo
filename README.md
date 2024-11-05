@@ -2,6 +2,12 @@
 
 #### Transitioning from Go basics to advanced expertise <br/>
 
+### 1502. Can Make Arithmetic Progression From Sequence
+> Solution: <br/>
+[see more on Github](https://github.com/TranTuanNghia94/daily-algo/blob/main/algorithm/algo_nov_05_2024.go)<br/>
+[see more on Leetcode](https://leetcode.com/problems/can-make-arithmetic-progression-from-sequence/solutions/6009471/go-100-fast-without-sorting/)
+
+
 ### 2490. Circular Sentence
 > Solution: <br/>
 [see more on Github](https://github.com/TranTuanNghia94/daily-algo/blob/main/algorithm/algo_nov_02_2024.go#L105)<br/>
