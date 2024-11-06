@@ -6,7 +6,9 @@ import (
 )
 
 func main() {
-	s := []int{1, 2, 2, 3}
-	r := algo.IsMonotonic(s)
+	a := "1111001110001111100001101"
+	b := "101111001100000011011110011"
+	// c := "10101"
+	r := algo.AddBinary(a, b)
 	fmt.Println("\n", r)
 }

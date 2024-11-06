@@ -4,7 +4,45 @@ import (
 	"math/bits"
 	"slices"
 	"sort"
+	"strconv"
+	"strings"
 )
+
+// https://leetcode.com/problems/add-binary/description/?envType=study-plan-v2&envId=programming-skills
+func AddBinary(a string, b string) string {
+	result := []string{}
+	i := len(a) - 1
+	j := len(b) - 1
+	carry := 0
+
+	for i >= 0 || j >= 0 {
+		sum := carry
+
+		if i >= 0 {
+			sum += int(a[i]) - int('0')
+		}
+
+		if j >= 0 {
+			sum += int(b[j]) - int('0')
+		}
+
+		result = append(result, strconv.Itoa(sum%2))
+
+		if sum > 1 {
+			carry = 1
+		} else {
+			carry = 0
+		}
+		i--
+		j--
+	}
+
+	if carry != 0 {
+		result = append(result, "1")
+	}
+	slices.Reverse(result)
+	return strings.Join(result, "")
+}
 
 // https://leetcode.com/problems/monotonic-array/description/?envType=study-plan-v2&envId=programming-skills
 func IsMonotonic(nums []int) bool {
