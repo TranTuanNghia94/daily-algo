@@ -2,6 +2,15 @@
 
 #### Transitioning from Go basics to advanced expertise <br/>
 
+
+### 896. Monotonic Array
+> Solution: <br/>
+[see more on Github](https://github.com/TranTuanNghia94/daily-algo/blob/main/algorithm/algo_nov_06_2024.go#L10)<br/>
+[see more on Leetcode](https://leetcode.com/problems/monotonic-array/solutions/6015645/go-beats-100/)
+
+<br/>
+<hr />
+
 ### 1502. Can Make Arithmetic Progression From Sequence
 > Solution: <br/>
 [see more on Github](https://github.com/TranTuanNghia94/daily-algo/blob/main/algorithm/algo_nov_05_2024.go#L4)<br/>

@@ -6,7 +6,7 @@ import (
 )
 
 func main() {
-	s := []int{3, 16, 8, 4, 2}
-	r := algo.CanSortArray(s)
+	s := []int{1, 2, 2, 3}
+	r := algo.IsMonotonic(s)
 	fmt.Println("\n", r)
 }
