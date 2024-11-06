@@ -6,8 +6,7 @@ import (
 )
 
 func main() {
-	s := "weallloveyou"
-	k := 7
-	r := algo.MaxVowels(s, k)
-	fmt.Println(r)
+	s := []int{3, 16, 8, 4, 2}
+	r := algo.CanSortArray(s)
+	fmt.Println("\n", r)
 }
