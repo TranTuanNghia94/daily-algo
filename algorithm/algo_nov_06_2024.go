@@ -8,6 +8,26 @@ import (
 	"strings"
 )
 
+func LongestPalindrome(s string) string {
+	start := 0
+	end := len(s) - 1
+
+	for ; start < end; start, end = start+1, end-1 {
+	}
+
+	return s[start : end+1]
+}
+
+// https://leetcode.com/problems/fibonacci-number/description/?envType=study-plan-v2&envId=dynamic-programming
+func Fib(n int) int {
+	a, b := 0, 1
+
+	for i := 0; i < n; i++ {
+		a, b = b, a+b
+	}
+	return a
+}
+
 // https://leetcode.com/problems/add-binary/description/?envType=study-plan-v2&envId=programming-skills
 func AddBinary(a string, b string) string {
 	result := []string{}
