@@ -6,7 +6,8 @@ import (
 )
 
 func main() {
-	s := 25
-	r := algo.Tribonacci(s)
+	s := []int{0, 1, 2, 2, 5, 7}
+	k := 2
+	r := algo.GetMaximumXor(s, k)
 	fmt.Println("\n", r)
 }
