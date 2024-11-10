@@ -6,8 +6,8 @@ import (
 )
 
 func main() {
-	s := 3
-	k := 4
-	r := algo.MinEnd(s, k)
+	s := []int{1, 2, 8}
+	k := 10
+	r := algo.MinimumSubarrayLength(s, k)
 	fmt.Println("\n", r)
 }
