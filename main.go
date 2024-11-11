@@ -6,8 +6,8 @@ import (
 )
 
 func main() {
-	s := []int{1, 2, 8}
-	k := 10
-	r := algo.MinimumSubarrayLength(s, k)
+	s := []int{17, 2}
+	// k := 10
+	r := algo.PrimeSubOperation(s)
 	fmt.Println("\n", r)
 }
