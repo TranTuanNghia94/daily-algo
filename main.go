@@ -6,8 +6,9 @@ import (
 )
 
 func main() {
-	s := []int{17, 2}
+	s := [][]int{{1, 2}, {3, 2}, {2, 4}, {5, 6}, {3, 5}}
+	q := []int{1, 2, 3, 4, 5, 6}
 	// k := 10
-	r := algo.PrimeSubOperation(s)
+	r := algo.MaximumBeauty(s, q)
 	fmt.Println("\n", r)
 }
