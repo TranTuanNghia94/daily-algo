@@ -6,9 +6,10 @@ import (
 )
 
 func main() {
-	s := [][]int{{1, 2}, {3, 2}, {2, 4}, {5, 6}, {3, 5}}
-	q := []int{1, 2, 3, 4, 5, 6}
+	s := []int{1, 7, 9, 2, 5}
+	lower := 11
+	upper := 11
 	// k := 10
-	r := algo.MaximumBeauty(s, q)
+	r := algo.CountFairPairs(s, lower, upper)
 	fmt.Println("\n", r)
 }
