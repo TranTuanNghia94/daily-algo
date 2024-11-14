@@ -6,10 +6,9 @@ import (
 )
 
 func main() {
-	s := []int{1, 7, 9, 2, 5}
-	lower := 11
-	upper := 11
+	s := []int{11, 6}
+	n := 6
 	// k := 10
-	r := algo.CountFairPairs(s, lower, upper)
+	r := algo.MinimizedMaximum(n, s)
 	fmt.Println("\n", r)
 }
