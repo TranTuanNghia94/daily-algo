@@ -6,9 +6,8 @@ import (
 )
 
 func main() {
-	s := []int{11, 6}
-	n := 6
+	s := []int{2, 2, 2, 1, 1, 1}
 	// k := 10
-	r := algo.MinimizedMaximum(n, s)
+	r := algo.FindLengthOfShortestSubarray(s)
 	fmt.Println("\n", r)
 }
