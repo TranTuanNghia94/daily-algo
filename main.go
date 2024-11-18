@@ -6,8 +6,8 @@ import (
 )
 
 func main() {
-	s := []int{3, 2, 3, 2, 3, 2}
-	k := 2
-	r := algo.ResultsArray(s, k)
+	s := []int{2, 4, 9, 3}
+	k := -2
+	r := algo.Decrypt(s, k)
 	fmt.Println("\n", r)
 }
