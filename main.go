@@ -6,8 +6,8 @@ import (
 )
 
 func main() {
-	s := []int{2, 4, 9, 3}
-	k := -2
-	r := algo.Decrypt(s, k)
+	s := []int{1, 1, 1, 1, 1}
+	k := 2
+	r := algo.MaximumSubarraySum(s, k)
 	fmt.Println("\n", r)
 }
