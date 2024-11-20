@@ -1,7 +1,6 @@
 package algo
 
-// s = "aabaaaacaabc", k = 2
-// 8
+// https://leetcode.com/problems/take-k-of-each-character-from-left-and-right/description/?envType=daily-question&envId=2024-11-20
 func TakeCharacters(s string, k int) int {
 	target := [3]int{}
 
